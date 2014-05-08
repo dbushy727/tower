@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/strapped.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/index.html">Tower</a>
+        </div> <!-- /.navbar-header -->
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/index.html#icon" class="nav-link">Benefits</a></li>
+            <li><a href="/index.html#tour" class="nav-link">Tour</a></li>
+            <li><a href="/index.html#about" class="nav-link">About</a></li>
+            <li><a href="/show.html">Buildings</a></li>
+            <li><button class="btn btn-warning btn-sm navbar-btn">Sign Up</button></li>
+          </ul>
+        </div> <!-- /.navbar-collapse -->
+      </div> <!-- /.container -->
+    </nav> <!-- /.navbar -->
+
+    <div class="contact_cont container">
+      <h3 id="about" class="subhead">Contact Us</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</p>
+          <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+        </div> <!-- /.col-md-10 -->
+        <div class="col-md-6">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</p>
+          <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+        </div> <!-- /.col-md-10 -->
+      </div> <!-- /.row -->
+      <hr>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 text-center">
+          <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+        </div> <!-- /.col-md-10 -->
+      </div> <!-- /.row -->
+    </div> <!-- container -->
+
+    <footer class="contact_foot">
+      <div class="clearfix">
+        <p>
+          Copyright &copy; 2014 | Tower Real Estate Investments
+        </p>
+
+      </div> <!-- /.container -->
+    </footer>
+    <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(".nav-link").click(function(e) {
+      e.preventDefault();
+      var link = $(this);
+      var href = link.attr("href");
+      // $("html,body").animate({scrollTop: $(href).offset().top - 65}, 1000);
+      link.closest(".navbar").find(".navbar-toggle:not(.collapsed)").click();
+    });
+  </script>
+</body>
+</html>
